@@ -116,13 +116,17 @@ img {
 	header
 ===================*/
 header {
-  background:rgba(0, 0, 0, 0.5);
+  background:rgba(0, 0, 0, 0.8);
   margin: 0 auto;
   padding: 0;
 }
 
 .logo_img {
-  padding: 9px 0;
+  height: 50px;
+  max-width: 100%;
+}
+.logo_img img{
+  height: 100%;
 }
 
 /*=========
@@ -950,10 +954,10 @@ ul.breadcrumbs_m {
 
 
 
-/*------ present app layers-------*/
+/*------ app layers-------*/
 
 section.top_banner_bg {
-  background: hsl(220, 93%, 6%) url("../images/top_banner.png") no-repeat fixed 0 0 / cover ;
+  background: hsl(220, 93%, 6%) url("../images/c2c/Header_Background.png") no-repeat fixed 0 0 / cover ;
   padding-bottom: 0;
   position: relative;
 }
@@ -976,6 +980,7 @@ section.top_banner_bg:after {
 .present_img {
   position: relative;
   z-index: 2;
+  max-width: 150%;
 }
 
 .present h1 {
@@ -983,11 +988,12 @@ section.top_banner_bg:after {
   font-weight: 300;
   color: #fff;
   line-height:76px;
-  padding-bottom:120px;
+  padding-bottom:50px;
 }
 .present h5 {
   font-weight: 300;
   color: #fff;
+  padding-bottom:70px;
 }
 .present span {
   color: hsl(37, 99%, 44%);
@@ -998,41 +1004,15 @@ section.top_banner_bg:after {
   font-weight: 700;
 }
 
-.section_btn .btn.btn-default {
-  background: hsl(357, 73%, 49%) none repeat scroll 0 0;
-  border: 0 none;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
-  color: hsl(0, 0%, 100%);
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 64px;
-  margin: 40px 5px 0;
-  padding: 5px 35px;
-  text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
-  font-family: roboto slab;
+.section_btn img {
+  padding: 5px 0px 5px;
+  max-width: 45%;
 }
-
-.section_btn > span .btn.btn-default {
-  background: #f6b20e;
-}
-
 
 .present_img {
   position: relative;
 }
 
-.section_btn .btn.btn-default:hover {
-  background: #ba0a14 none repeat scroll 0 0;
-}
-
-.section_btn > span .btn.btn-default:hover {
-  background: #d59700 none repeat scroll 0 0;
-}
-
-.section_sub_btn .btn.btn-default:hover {
-  background: #d7232d none repeat scroll 0 0;
-}
 
 
 /*-------- features ---------*/
@@ -1937,7 +1917,7 @@ footer .footer_bottom {
 .navbar ul li {  line-height: 15px;  list-style: outside none none;  margin: 5px 0;  padding: 0;  vertical-align: middle;  width: 100%;}
 .navbar {  padding: 5px 0; position:relative;}
 .navbar-toggle {
-  float: none;
+  float: right;
   margin: 10px;
   padding: 10px;
 }
@@ -1971,13 +1951,16 @@ footer .footer_bottom {
 
 .logo_img {
   float: left;
-  padding: 9px 0;
   position: relative;
   z-index: 1;
+  height: 63px;
+}
+.logo_img img {
+  height: 100%;
 }
 .present {  text-align: center;}
 .present h1 {  font-size: 40px;  line-height: 60px;padding-bottom: 50px;}
-.section_btn {  margin: 20px 0 30px;}
+.section_btn {  }
 .present_img {  margin: 0 auto;  text-align: center;}
 .section_heading h2 {  font-size: 35px; line-height:50px;}
 .section_heading h4 {  font-size: 20px;  line-height: 30px;}
@@ -2017,7 +2000,7 @@ article {  margin: 0 0 70px;}
 .contact_text { margin-left: auto;  margin-top: 45px;}
 .subscribe {  text-align: center;}
 .workng_img {  margin: 30px auto 40px;}
-.section_btn .btn.btn-default {  margin: 20px 5px 0;}
+.section_btn img {  max-width: 60%;}
 .footer_top > h4 {  font-size: 20px;  line-height: 30px;margin: 0 auto 25px;}
 .features_detail li:nth-child(2n) {  text-align: center;}
 .features_detail li:nth-last-child(2) {  border-bottom: 1px solid hsl(0, 0%, 80%);}
@@ -2083,7 +2066,15 @@ section.coming_soon_bg {  padding: 60px 0 200px;}
 @media (min-width:768px) and (max-width:992px){
 .logo_img {
   padding: 9px 0;
-  text-align: center;
+  text-align: left;
+  height: 63px;
+  width: 25%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.logo_img img{
+  height: 100%;
+
 }
 .navbar ul.nav.navbar-nav li {
   list-style: outside none none;
@@ -2098,7 +2089,11 @@ section.coming_soon_bg {  padding: 60px 0 200px;}
 .present {
   margin-top: 50px;
 }
-
+.navbar{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto
+}
 	
 .coming_soon_footer ul {
   float: none;
