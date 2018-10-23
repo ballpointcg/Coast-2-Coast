@@ -1248,32 +1248,11 @@ section.our_service_bg:after {
   line-height: 50px;
   padding-bottom: 15px;
   position: relative;
-}
-
-.how_it_work_m.text-right h5::after {
-  border-bottom: 1px solid hsl(42, 93%, 51%);
-  bottom: 0;
-  color: hsl(42, 93%, 51%);
-  content: "";
-  position: absolute;
-  right: -60px;
-  width: 60%;
-  z-index: 1;
-}
-
-.how_it_work_m.text-right h5::before {
-  content: "";
-  font-family: fontawesome;
-  font-size: 16px;
-  position: absolute;
-  right: -69px;
-  top: 38px;
-  z-index: 1;
-  color:#f6b20e;
+  font-size: 1.7em;
 }
 
 .how_it_work_m p {
-  font-size: 14px;
+  font-size: 1.2em;
   font-weight: 300;
   margin: 0;
   padding: 8px 0;
@@ -1282,6 +1261,7 @@ section.our_service_bg:after {
 .workng_img {
   margin: 0 auto;
   text-align: center;
+  z-index: 0;
 }
 
 .how_it_work_m.text-left h5 {
@@ -1289,28 +1269,7 @@ section.our_service_bg:after {
   line-height: 50px;
   padding-bottom: 15px;
   position: relative;
-}
-
-.how_it_work_m.text-left h5::after {
-  border-bottom: 0.5px solid #f6b20e;
-  bottom: 0;
-  content: "";
-  position: absolute;
-  left: -60px;
-  width: 60%;
-  z-index: 1;
-  color:#f6b20e;
-}
-
-.how_it_work_m.text-left h5::before {
-  content: "";
-  font-family: fontawesome;
-  font-size: 16px;
-  position: absolute;
-  left: -69px;
-  top: 38px;
-  z-index: 1;
-  color:#f6b20e;
+  font-size: 1.7em;
 }
 
 
