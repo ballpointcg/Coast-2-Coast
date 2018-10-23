@@ -1146,9 +1146,10 @@ section.top_banner_bg:after {
 
 .services_img {
   float: left;
-  padding: 63px 10px 0 0;
+  padding: 0px 10px 0 0;
+  margin-top: 12%;
 }
-
+.services_img_n img {  max-width: 310px; float: left;}
 
 .services_detail span {
   border: 2px solid hsl(42, 93%, 51%);
@@ -1967,8 +1968,9 @@ footer .footer_bottom {
 .features_detail {  margin-top: 30px;}
 .features_detail li {  border-right: none;  text-align: center;  width: 100%;}
 .features_img {  text-align: center;width: 100%;}
-.services_img {  display:none;}
-.services_img_n {  margin: 0 auto;  padding: 20px 5px 0;  text-align: center;  width: 100%;}
+.services_img { text-align: center; width: 100% }
+.services_img_n img {  margin-left: auto; margin-right: auto; display: block;  width: 49%;}
+.services_img_n{  display: none}
 .services_detail {  margin: 0 0 30px;  text-align: center;
 }.services_detail li {  padding: 50px 0 0px;margin: 0 auto;}
 .services_detail span {  float: none;}
@@ -2231,8 +2233,8 @@ article {  margin: 0 0 70px;}
 .features_detail h5 {  font-size: 22px;}
 .features_img {  padding-top: 30px;}
 .features_detail {  margin-top: 70px;}
-.services_img {  width: 49%;}
-.services_img_n {  float: left;  width: 49%;}
+.services_img {  float: left; margin-top: 15%;width: 49%;}
+.services_img_n img{  float: left;  width: 49%;}
 .services_detail span {  padding: 23px 24px;}
 .services_detail {  margin-left: 15px;  margin-top: 15px;}
 .how_it_work_m { margin-top: 20px;}
