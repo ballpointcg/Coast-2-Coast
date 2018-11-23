@@ -957,7 +957,7 @@ ul.breadcrumbs_m {
 /*------ app layers-------*/
 
 section.top_banner_bg {
-  background: hsl(220, 93%, 6%) url("../images/c2c/Header_Background.png") no-repeat fixed 0 0 / cover ;
+  background: url("../images/c2c/PossibleBackground2.jpg") no-repeat fixed 0 0 / cover ;
   padding-bottom: 0;
   position: relative;
 }
@@ -969,7 +969,7 @@ section.top_banner_bg:after {
 	height:100%;
 	width:100%;
 	content:"";
-	background:rgba(1, 10, 28, 0.8);	
+	background:rgba(1, 10, 28, 0.6);	
 }
 
 .present {
@@ -1169,6 +1169,7 @@ section.top_banner_bg:after {
   line-height: 47px;
   margin: 0;
   padding: 0 20px 5px;
+  width: 70%;
 }
 
 .services_detail p {
@@ -1178,7 +1179,7 @@ section.top_banner_bg:after {
   font-weight: 300;
   line-height: 20px;
   padding: 0 0 0 20px;
-  width: 74%;
+  width: 70%;
 }
 .services_detail > ul {
   margin: 0;
