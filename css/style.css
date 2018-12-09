@@ -1540,7 +1540,7 @@ section.testimonial_bg:after {
 
 /*-------- contact -------*/
 section.contact_bg {
-  background: url(../images/contact_bg.png) repeat scroll 0 0;
+  /* background: url(../images/contact_bg.png) repeat scroll 0 0; */
   position:relative;
 }
 
@@ -1552,7 +1552,7 @@ section.contact_bg:after {
 	height:100%;
 	width:100%;
 	content:"";
-	background:rgba(1, 10, 28, 0.8);	
+	/* background:rgba(1, 10, 28, 0.8);	 */
 }
 
 .contact_form {
@@ -1613,7 +1613,6 @@ label {
 
 }
 .contact_text h5 {
-  color: hsl(0, 0%, 100%);
   display: inline-block;
   float: left;
   line-height: 47px;
@@ -1622,7 +1621,6 @@ label {
   width: 384px;
 }
 .contact_text h5 a{
-  color: hsl(0, 0%, 100%);
   display: inline-block;
  text-decoration: underline;
 }
