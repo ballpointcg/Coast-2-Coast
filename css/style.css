@@ -1175,7 +1175,7 @@ section.top_banner_bg:after {
 .services_detail p {
   color: hsl(0, 0%, 100%);
   float: left;
-  font-size: 13px;
+  font-size: 1.1em;
   font-weight: 300;
   line-height: 20px;
   padding: 0 0 0 20px;
