@@ -1081,7 +1081,7 @@ section.top_banner_bg:after {
   border-bottom: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   display: inline-block;
-  font-size: 13px;
+  font-size: 1.1em;
   font-weight: 300;
   line-height: 20px;
   list-style: outside none none;
