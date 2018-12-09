@@ -1367,7 +1367,7 @@ section.our_service_bg:after {
 
 
 section.price_table_bg {
-  background: url(../images/price_table_bg.png) repeat scroll 0 0;
+  background: url(../images/c2c/PossibleBackground1-crop.png) no-repeat fixed 0 0 / cover;
   position:relative;
 }
 
