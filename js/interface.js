@@ -34,12 +34,12 @@
 		$('.loader').fadeOut(200);
 		$('body').addClass('body-loaded');
 
-    	var wow = new WOW({
-		    offset: 0,          
-		    mobile: false
-		  }
-		);
-		wow.init();
+    	// var wow = new WOW({
+		  //   offset: 0,          
+		  //   mobile: false
+		  // }
+		// );
+		// wow.init();
 	});
 
 	var navbar=$('.js-navbar');
@@ -138,15 +138,15 @@
 
 
 
-	if(!mobileDevice){
-		$(window).stellar({
-		  	responsive: true,
-		  	horizontalScrolling: false,
-		  	hideDistantElements: false,
-		  	horizontalOffset: 0,
-		  	verticalOffset: 0,
-		});
-	}
+	// if(!mobileDevice){
+	// 	$(window).stellar({
+	// 	  	responsive: true,
+	// 	  	horizontalScrolling: false,
+	// 	  	hideDistantElements: false,
+	// 	  	horizontalOffset: 0,
+	// 	  	verticalOffset: 0,
+	// 	});
+	// }
 
 
 
@@ -156,15 +156,15 @@
 
 
 
-	$(".slideshow").owlCarousel({
-    	singleItem : true,
-    	transitionStyle : "fadeUp",
-    	mouseDrag:false,
-    	responsiveRefreshRate : 0,
-    	touchDrag:false,
-    	autoHeight:true,
-    	autoPlay : 10000
-	});
+	// $(".slideshow").owlCarousel({
+  //   	singleItem : true,
+  //   	transitionStyle : "fadeUp",
+  //   	mouseDrag:false,
+  //   	responsiveRefreshRate : 0,
+  //   	touchDrag:false,
+  //   	autoHeight:true,
+  //   	autoPlay : 10000
+	// });
 
 
 
@@ -211,10 +211,10 @@
 
 
 
-	$('.js-play').magnificPopup({
-	    type: 'iframe',
-	    removalDelay: 300
-    });
+	// $('.js-play').magnificPopup({
+	//     type: 'iframe',
+	//     removalDelay: 300
+  //   });
 
 
 
@@ -224,24 +224,24 @@
 
 
 
-	$('.js-gallery').magnificPopup({
-		delegate: 'a',
-	    type: 'image',
-	    removalDelay: 300,
-	    tLoading: 'Loading image #%curr%...',
-	    gallery: {
-	       enabled: true,
-	       navigateByImgClick: true,
-	       preload:[0,1]
-	    },
-	    image: {
-	       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-	       titleSrc: function(item) {
-	          return item.el.attr('title') + '<small></small>';
-	       }
-	    }
+	// $('.js-gallery').magnificPopup({
+	// 	delegate: 'a',
+	//     type: 'image',
+	//     removalDelay: 300,
+	//     tLoading: 'Loading image #%curr%...',
+	//     gallery: {
+	//        enabled: true,
+	//        navigateByImgClick: true,
+	//        preload:[0,1]
+	//     },
+	//     image: {
+	//        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+	//        titleSrc: function(item) {
+	//           return item.el.attr('title') + '<small></small>';
+	//        }
+	//     }
 
-	});
+	// });
 
 
 	/*-------------------------------------------------------------------------------
@@ -250,15 +250,15 @@
 
 
 
-	$(".review-carousel").owlCarousel({
-		singleItem:true,
-	 	autoHeight : true
-	});
+	// $(".review-carousel").owlCarousel({
+	// 	singleItem:true,
+	//  	autoHeight : true
+	// });
 
-	$(".partners-carousel").owlCarousel({
-		items:4,
-    	responsiveRefreshRate : 0,
-	});
+	// $(".partners-carousel").owlCarousel({
+	// 	items:4,
+  //   	responsiveRefreshRate : 0,
+	// });
 
 
 
@@ -301,14 +301,14 @@
 
 
 	
-	$(".gallery-carousel").owlCarousel({
-		singleItem:true,
-	 	autoHeight : true,
-	 	pagination:false,
-	 	navigation:true,
-	 	transitionStyle : "fadeUp",
-	 	navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-	});
+	// $(".gallery-carousel").owlCarousel({
+	// 	singleItem:true,
+	//  	autoHeight : true,
+	//  	pagination:false,
+	//  	navigation:true,
+	//  	transitionStyle : "fadeUp",
+	//  	navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+	// });
 
 
 
