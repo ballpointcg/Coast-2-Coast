@@ -957,7 +957,7 @@ ul.breadcrumbs_m {
 /*------ app layers-------*/
 
 section.top_banner_bg {
-  background: url("../images/c2c/PossibleBackground2.webp") no-repeat fixed 0 0 / cover ;
+  background: url("../images/min/PossibleBackground2.jpg") no-repeat fixed 0 0 / cover ;
   padding-bottom: 0;
   position: relative;
 }
@@ -1219,7 +1219,7 @@ section.top_banner_bg:after {
 
 
 section.our_service_bg {
-  background: url(../images/c2c/Background.jpg) no-repeat fixed 0 0 / cover;
+  background: url(../images/min/Background.jpg) no-repeat fixed 0 0 / cover;
   position:relative;
 }
 
@@ -1373,7 +1373,7 @@ section.our_service_bg:after {
 
 
 section.price_table_bg {
-  background: url(../images/c2c/PossibleBackground1-crop.webp) no-repeat fixed 0 0 / cover;
+  background: url(../images/min/PossibleBackground1-crop.jpg) no-repeat fixed 0 0 / cover;
   position:relative;
 }
 
