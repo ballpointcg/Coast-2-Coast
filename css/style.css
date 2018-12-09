@@ -1161,6 +1161,12 @@ section.top_banner_bg:after {
   padding: 30px 32px;
 }
 
+.services_detail_city{
+  font-size: 25px!important;
+}
+.services_detail_trophy{
+  font-size: 27px!important;
+}
 
 .services_detail h5 {
   color:#fff;
