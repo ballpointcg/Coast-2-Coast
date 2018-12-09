@@ -1286,8 +1286,8 @@ section.our_service_bg:after {
 
 .discount > p {
   color: hsl(0, 0%, 100%);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: bold;
   margin: 0;
 }
 
