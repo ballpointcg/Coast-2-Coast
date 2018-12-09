@@ -1213,7 +1213,7 @@ section.top_banner_bg:after {
 
 
 section.our_service_bg {
-  background: url(../images/services_bg.png) repeat scroll 0 0;
+  background: url(../images/c2c/Header_Background.png) no-repeat fixed 0 0 / cover;
   position:relative;
 }
 
