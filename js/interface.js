@@ -174,33 +174,33 @@
 
 
 
-	$('.js-iso').each(function() {		
-		var $container = $(this);
-		$container.imagesLoaded( function(){
-			$container.isotope({		 
-				itemSelector: '.js-iso-item',
-				layoutMode: 'masonry',	
-				masonry: {
-				  columnWidth: '.js-iso-item'
-				}	
-			});	
-		});
-    }); 
+	// $('.js-iso').each(function() {		
+	// 	var $container = $(this);
+	// 	$container.imagesLoaded( function(){
+	// 		$container.isotope({		 
+	// 			itemSelector: '.js-iso-item',
+	// 			layoutMode: 'masonry',	
+	// 			masonry: {
+	// 			  columnWidth: '.js-iso-item'
+	// 			}	
+	// 		});	
+	// 	});
+  //   }); 
 
 
-	$('.filter a').on('click', function() {
-		$('.filter .active').removeClass('active');
-		$(this).closest('li').addClass('active');
-		var selector = $(this).attr('data-filter');
-		$('.js-iso').isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 500,
-				queue: false
-			}
-		});
-		return false;
-	});
+	// $('.filter a').on('click', function() {
+	// 	$('.filter .active').removeClass('active');
+	// 	$(this).closest('li').addClass('active');
+	// 	var selector = $(this).attr('data-filter');
+	// 	$('.js-iso').isotope({
+	// 		filter: selector,
+	// 		animationOptions: {
+	// 			duration: 500,
+	// 			queue: false
+	// 		}
+	// 	});
+	// 	return false;
+	// });
 
 
 
@@ -268,30 +268,30 @@
 
 
 
-    function loadFacts(){
-        $(".js-counter:in-viewport").each(function() {	
-			if (!$(this).hasClass("animated")) {
-				$(this).addClass("animated");
-				var datacount = $(this).attr("data-value");
-	            var $this = $(this);
-	            $({Counter: 0}).animate({Counter: datacount}, {
-	                duration: 2000,
-	                easing: 'swing',
-	                step: function () {
-	                    $this.text(Math.ceil(this.Counter));
-	                }
-	            });
-			}
-		});
-    }
+    // function loadFacts(){
+    //     $(".js-counter:in-viewport").each(function() {	
+		// 	if (!$(this).hasClass("animated")) {
+		// 		$(this).addClass("animated");
+		// 		var datacount = $(this).attr("data-value");
+	  //           var $this = $(this);
+	  //           $({Counter: 0}).animate({Counter: datacount}, {
+	  //               duration: 2000,
+	  //               easing: 'swing',
+	  //               step: function () {
+	  //                   $this.text(Math.ceil(this.Counter));
+	  //               }
+	  //           });
+		// 	}
+		// });
+    // }
 
 
 
 
 
-	$(window).scroll(function(){
-		loadFacts();
-	});
+	// $(window).scroll(function(){
+	// 	loadFacts();
+	// });
 
 
 
@@ -318,87 +318,87 @@
 
 
 
-	if ($('.js-gmap').length > 0){
-		var map;
-		map = new GMaps({
-			el: '.js-gmap',
-			lat: 45.036537,
-			lng:38.995768,
-			scrollwheel:false,
-			zoom: 15,
-			zoomControl : true,
-			panControl : false,
-			streetViewControl : false,
-			mapTypeControl: false,
-			overviewMapControl: false,
-			clickable: false
-		});
+	// if ($('.js-gmap').length > 0){
+	// 	var map;
+	// 	map = new GMaps({
+	// 		el: '.js-gmap',
+	// 		lat: 45.036537,
+	// 		lng:38.995768,
+	// 		scrollwheel:false,
+	// 		zoom: 15,
+	// 		zoomControl : true,
+	// 		panControl : false,
+	// 		streetViewControl : false,
+	// 		mapTypeControl: false,
+	// 		overviewMapControl: false,
+	// 		clickable: false
+	// 	});
 
 
-		var image = 'img/map-label.png';
-		var infoWindow = new google.maps.InfoWindow({
+	// 	var image = 'img/map-label.png';
+	// 	var infoWindow = new google.maps.InfoWindow({
 		    
-		});
+	// 	});
 
-		map.addMarker({
-			lat: 45.035732,
-			lng:38.995768,
-			icon: image,
-			animation: google.maps.Animation.DROP,
-			verticalAlign: 'bottom',
-			horizontalAlign: 'center',
-			backgroundColor: '#d3cfcf',
-			infoWindow:{
-				content: '<div class="map-info">st. Kutuzova 85, Krasnodar<br>Russian Federation</div>'
-			}
-		});
+	// 	map.addMarker({
+	// 		lat: 45.035732,
+	// 		lng:38.995768,
+	// 		icon: image,
+	// 		animation: google.maps.Animation.DROP,
+	// 		verticalAlign: 'bottom',
+	// 		horizontalAlign: 'center',
+	// 		backgroundColor: '#d3cfcf',
+	// 		infoWindow:{
+	// 			content: '<div class="map-info">st. Kutuzova 85, Krasnodar<br>Russian Federation</div>'
+	// 		}
+	// 	});
 		  
-		var styles = [ 
+	// 	var styles = [ 
 
-			{
-			  "featureType": "road",
-			  "stylers": [
-				{ "color": "#333333" }
-			  ]
-			  	},{
-			  "featureType": "landscape",
-			  "stylers": [
-				{ "color": "#1F1F1F" }
-			  ]
-				},{
-			  "featureType": "water",
-			  "stylers": [
-				{ "color": "#D4B068" }
-			  ]
-			  },{
-			  "elementType": "labels.text.fill",
-			  "stylers": [
-				{ "color": "#808080" }
-			  ]
-			  },{
-			  "featureType": "poi",
-			  "stylers": [
-				{ "color": "#232323" }
-			  ]
-			  },{
-			  "elementType": "labels.text",
-			  "stylers": [
-				{ "saturation": 1 },
-				{ "weight": 0.1 },
-				{ "color": "#999999" }
-			  ]
-			}
+	// 		{
+	// 		  "featureType": "road",
+	// 		  "stylers": [
+	// 			{ "color": "#333333" }
+	// 		  ]
+	// 		  	},{
+	// 		  "featureType": "landscape",
+	// 		  "stylers": [
+	// 			{ "color": "#1F1F1F" }
+	// 		  ]
+	// 			},{
+	// 		  "featureType": "water",
+	// 		  "stylers": [
+	// 			{ "color": "#D4B068" }
+	// 		  ]
+	// 		  },{
+	// 		  "elementType": "labels.text.fill",
+	// 		  "stylers": [
+	// 			{ "color": "#808080" }
+	// 		  ]
+	// 		  },{
+	// 		  "featureType": "poi",
+	// 		  "stylers": [
+	// 			{ "color": "#232323" }
+	// 		  ]
+	// 		  },{
+	// 		  "elementType": "labels.text",
+	// 		  "stylers": [
+	// 			{ "saturation": 1 },
+	// 			{ "weight": 0.1 },
+	// 			{ "color": "#999999" }
+	// 		  ]
+	// 		}
 	  
-		];
+	// 	];
 
-		map.addStyle({
-			styledMapName:"Styled Map",
-			styles: styles,
-			mapTypeId: "map_style"  
-		});
+	// 	map.addStyle({
+	// 		styledMapName:"Styled Map",
+	// 		styles: styles,
+	// 		mapTypeId: "map_style"  
+	// 	});
 
-		map.setStyle("map_style");
-	}
+	// 	map.setStyle("map_style");
+	// }
 	
 	
 
@@ -408,27 +408,58 @@
 
 
 
-	if ($('.js-ajax-form').length) {
-		$('.js-ajax-form').each(function(){
-			$(this).validate({
-				errorClass: 'error wobble-error',
-			    submitHandler: function(form){
-		        	$.ajax({
-			            type: "POST",
-			            url:"mail.php",
-			            data: $(form).serialize(),
-			            success: function() {
-			                $('.modal').modal('hide');
-		                	$('#success').modal('show');
-		                },
+// 	if ($('.js-ajax-form').length) {
+// 		$('.js-ajax-form').each(function(){
+// 			$(this).validate({
+// 				errorClass: 'error wobble-error',
+// 			    submitHandler: function(form){
+// 		        	$.ajax({
+// 			            type: "POST",
+// 			            url:"mail.php",
+// 			            data: $(form).serialize(),
+// 			            success: function() {
+// 			                $('.modal').modal('hide');
+// 		                	$('#success').modal('show');
+// 		                },
 
-		                error: function(){
-			            	$('.modal').modal('hide');
-			                $('#error').modal('show');
-			            }
-			        });
-			    }
-			});
-		});
-	}
+// 		                error: function(){
+// 			            	$('.modal').modal('hide');
+// 			                $('#error').modal('show');
+// 			            }
+// 			        });
+// 			    }
+// 			});
+// 		});
+// 	}
+$.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
+var $form = $('form#message-form'),
+    url = 'https://script.google.com/macros/s/AKfycby-o3ExBOnPJYslgEvAGHyL78tBgRnf0bwbMQzACr07GPfwhNI/exec';
+console.log(url);
+$('#form-submit').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+	}).success(function(e){
+		alert("Message Sent!");
+		$('input, textarea').val('');
+	});
+})
 })(jQuery);
