@@ -990,7 +990,7 @@ section.top_banner_bg:after {
   line-height:76px;
   padding-bottom:50px;
 }
-.present h5 {
+.present h3 {
   font-weight: 300;
   color: #fff;
   padding-bottom:70px;
@@ -1003,7 +1003,10 @@ section.top_banner_bg:after {
   color: hsl(42, 93%, 51%);
   font-weight: 700;
 }
-
+.present h1 b{
+  color: #fff;
+  font-weight: bold;
+}
 .section_btn img {
   padding: 5px 0px 5px;
   max-width: 45%;
