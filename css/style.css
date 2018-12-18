@@ -629,6 +629,17 @@ section.coming_soon_bg:after {
 
 }
 
+#donate-form{
+  width: 200px;
+  margin-left:  auto;
+  margin-right:  auto;
+
+}
+#donate-img{
+  width:100%;
+  margin-top: 30px;
+}
+
 .email_field .form-control {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
