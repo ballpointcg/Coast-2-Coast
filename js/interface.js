@@ -431,35 +431,27 @@
 // 			});
 // 		});
 // 	}
-$.fn.serializeObject = function()
-{
-   var o = {};
-   var a = this.serializeArray();
-   $.each(a, function() {
-       if (o[this.name]) {
-           if (!o[this.name].push) {
-               o[this.name] = [o[this.name]];
-           }
-           o[this.name].push(this.value || '');
-       } else {
-           o[this.name] = this.value || '';
-       }
-   });
-   return o;
-};
+
 var $form = $('form#message-form'),
-    url = 'https://script.google.com/macros/s/AKfycby-o3ExBOnPJYslgEvAGHyL78tBgRnf0bwbMQzACr07GPfwhNI/exec';
+	url = "" ;
 console.log(url);
 $('#form-submit').on('click', function(e) {
   e.preventDefault();
-  var jqxhr = $.ajax({
+  $.ajax({
     url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
+    method: "POST",
+	dataType: "jsonp",
+	crossDomain : true,
+    data: $form.serialize()
 	}).success(function(e){
-		alert("Message Sent!");
-		$('input, textarea').val('');
+		
+		if(e.result !=='error'){
+			$('input, textarea').val('');
+			alert(e.msg);
+		}else{
+			alert(e.msg.substring(4));
+		}
+
 	});
 })
 })(jQuery);
