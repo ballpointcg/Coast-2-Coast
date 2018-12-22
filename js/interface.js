@@ -446,10 +446,15 @@ $('#form-submit').on('click', function(e) {
 	}).success(function(e){
 		
 		if(e.result !=='error'){
-			$('input, textarea').val('');
+			$('input[name=PTYPE]').attr('checked',false);
+			$('input[type=text],input[type=email], textarea').val('');
+
 			alert(e.msg);
 		}else{
-			alert(e.msg.substring(4));
+			if (e.msg.substring(4) ==="Please enter a value")
+				alert("Please fill out all required fields");
+			else
+				alert(e.msg.substring(4));
 		}
 
 	});
