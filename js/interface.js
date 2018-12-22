@@ -433,7 +433,7 @@
 // 	}
 
 var $form = $('form#message-form'),
-	url = "" ;
+	url = "https://facebook.us12.list-manage.com/subscribe/post-json?u=d3ddd2c07f70b1c1cef38c1aa&amp;id=cbea2779f4&c=?";
 console.log(url);
 $('#form-submit').on('click', function(e) {
   e.preventDefault();

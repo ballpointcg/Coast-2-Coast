@@ -1594,7 +1594,22 @@ section.contact_bg:after {
   height: 55px;
   margin-bottom: 2px;
 }
-
+.contact_form .form-control-2 {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 18px;
+  font-weight: 300;
+  height: 55px;
+  margin-bottom: 2px;
+  width:30%;
+  text-align: center;
+}
+.phonearea{
+  font-size: 3rem;
+  color:  black !important;
+}
 label {
   display: inline-block;
   font-weight: 700;
