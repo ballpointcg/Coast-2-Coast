@@ -1621,8 +1621,15 @@ label {
 .form-group {
   margin-bottom: 20px;
 }
-
-
+.form-ul{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end:  0;
+  padding-inline-start: 10px;
+}
+.ul-label{
+  margin-left: 10px;
+}
 .contact_form .form-textarea {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
