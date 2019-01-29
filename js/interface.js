@@ -433,7 +433,8 @@
 // 	}
 
 var $form = $('form#message-form'),
-	url = "https://facebook.us12.list-manage.com/subscribe/post-json?u=d3ddd2c07f70b1c1cef38c1aa&amp;id=cbea2779f4&c=?";
+	url= "https://facebook.us20.list-manage.com/subscribe/post-json?u=bb9ad4822f2725f6a59afe35f&amp;id=2e929ab15a&c=?";
+	//url = "https://facebook.us12.list-manage.com/subscribe/post-json?u=d3ddd2c07f70b1c1cef38c1aa&amp;id=cbea2779f4&c=?";
 console.log(url);
 $('#form-submit').on('click', function(e) {
   e.preventDefault();
