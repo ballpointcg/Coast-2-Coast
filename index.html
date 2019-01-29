@@ -21,12 +21,27 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
-	<!-- Ads by Google -->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-1080583500771731",
-			enable_page_level_ads: true
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123908964-2"></script>
+	<!-- Detect region from IP address and track if not from Europe -->
+	<script
+	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 	crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+			// console.log(JSON.stringify(data, null, 2));
+			$.getJSON('https://gpdr.geoiplookup.io/'+data.ip, function(d2){
+				// console.log(d2);
+				if(d2.gdpr !== "true"){
+					// console.log("tracking gtag");
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'UA-123908964-3');
+				}
+			});
 		});
 	</script>
 </head>
