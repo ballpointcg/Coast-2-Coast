@@ -4,12 +4,12 @@
 
 
   	/*-------------------------------------------------------------------------------
-	  Detect mobile device 
+	  Detect mobile device
 	-------------------------------------------------------------------------------*/
 
 
 
-	var mobileDevice = false; 
+	var mobileDevice = false;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	  	$('html').addClass('mobile');
@@ -35,7 +35,7 @@
 		$('body').addClass('body-loaded');
 
     	// var wow = new WOW({
-		  //   offset: 0,          
+		  //   offset: 0,
 		  //   mobile: false
 		  // }
 		// );
@@ -174,18 +174,18 @@
 
 
 
-	// $('.js-iso').each(function() {		
+	// $('.js-iso').each(function() {
 	// 	var $container = $(this);
 	// 	$container.imagesLoaded( function(){
-	// 		$container.isotope({		 
+	// 		$container.isotope({
 	// 			itemSelector: '.js-iso-item',
-	// 			layoutMode: 'masonry',	
+	// 			layoutMode: 'masonry',
 	// 			masonry: {
 	// 			  columnWidth: '.js-iso-item'
-	// 			}	
-	// 		});	
+	// 			}
+	// 		});
 	// 	});
-  //   }); 
+  //   });
 
 
 	// $('.filter a').on('click', function() {
@@ -269,7 +269,7 @@
 
 
     // function loadFacts(){
-    //     $(".js-counter:in-viewport").each(function() {	
+    //     $(".js-counter:in-viewport").each(function() {
 		// 	if (!$(this).hasClass("animated")) {
 		// 		$(this).addClass("animated");
 		// 		var datacount = $(this).attr("data-value");
@@ -300,7 +300,7 @@
 	-------------------------------------------------------------------------------*/
 
 
-	
+
 	// $(".gallery-carousel").owlCarousel({
 	// 	singleItem:true,
 	//  	autoHeight : true,
@@ -337,7 +337,7 @@
 
 	// 	var image = 'img/map-label.png';
 	// 	var infoWindow = new google.maps.InfoWindow({
-		    
+
 	// 	});
 
 	// 	map.addMarker({
@@ -352,8 +352,8 @@
 	// 			content: '<div class="map-info">st. Kutuzova 85, Krasnodar<br>Russian Federation</div>'
 	// 		}
 	// 	});
-		  
-	// 	var styles = [ 
+
+	// 	var styles = [
 
 	// 		{
 	// 		  "featureType": "road",
@@ -388,19 +388,19 @@
 	// 			{ "color": "#999999" }
 	// 		  ]
 	// 		}
-	  
+
 	// 	];
 
 	// 	map.addStyle({
 	// 		styledMapName:"Styled Map",
 	// 		styles: styles,
-	// 		mapTypeId: "map_style"  
+	// 		mapTypeId: "map_style"
 	// 	});
 
 	// 	map.setStyle("map_style");
 	// }
-	
-	
+
+
 
 	/*-------------------------------------------------------------------------------
 	  Ajax Form
@@ -433,7 +433,7 @@
 // 	}
 
 var $form = $('form#message-form'),
-	url= "https://facebook.us20.list-manage.com/subscribe/post-json?u=bb9ad4822f2725f6a59afe35f&amp;id=2e929ab15a&c=?";
+	url= "https://gmail.us20.list-manage.com/subscribe/post-json?u=8700396e07e0a0e7db7b7cfa2&amp;id=531e6c5022&c=?";
 	//url = "https://facebook.us12.list-manage.com/subscribe/post-json?u=d3ddd2c07f70b1c1cef38c1aa&amp;id=cbea2779f4&c=?";
 console.log(url);
 $('#form-submit').on('click', function(e) {
@@ -445,7 +445,7 @@ $('#form-submit').on('click', function(e) {
 	crossDomain : true,
     data: $form.serialize()
 	}).success(function(e){
-		
+
 		if(e.result !=='error'){
 			$('input[name=PTYPE]').attr('checked',false);
 			$('input[type=text],input[type=email], textarea').val('');
