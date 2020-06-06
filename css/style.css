@@ -1262,7 +1262,7 @@ section.our_service_bg:after {
 .how_it_work_m i {
   font-size: 46px;
   line-height: 50px;
-  color: #f6b20e;
+  color: #019ef2;
 }
 .how_it_work_m.text-right h5 {
   color: #555454;
@@ -1643,14 +1643,14 @@ label {
 }
 
 .contact_text span {
-  color: hsl(42, 93%, 51%);
+  color: #019ef2;
   display: inline-block;
   float: left;
   font-size: 50px;
   padding: 10px;
 }
 .contact_text  span a {
-  color: hsl(42, 93%, 51%);
+  color: #019ef2;
   display: inline-block;
 
 }
