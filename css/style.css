@@ -45,11 +45,27 @@ h6{
 	font-size: 22px;
 }
 
-@media only screen and (min-width: 700px) {
-  .present_img {
-    top: 8.7vh;
+.app-links {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 5vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .app-links {
+    text-align: right;
+    top: 10vh;
+  }
+  .app-links img {
+    max-width: 50%;
   }
 }
+
+
+
+
+
 
 p{
 	font-size:16px;
@@ -995,7 +1011,6 @@ section.top_banner_bg:after {
 
 .present_img {
   position: relative;
-  z-index: 2;
   max-width: 150%;
 }
 
@@ -1004,12 +1019,12 @@ section.top_banner_bg:after {
   font-weight: 300;
   color: #fff;
   line-height:76px;
-  padding-bottom:50px;
+  padding-bottom:5px;
 }
 .present h3 {
   font-weight: 300;
   color: #fff;
-  padding-bottom:70px;
+  padding-bottom:5px;
 }
 .present span {
   color: hsl(37, 99%, 44%);
@@ -1025,7 +1040,7 @@ section.top_banner_bg:after {
 }
 .section_btn img {
   padding: 5px 0px 5px;
-  max-width: 45%;
+  text-align: center;
 }
 
 .present_img {
@@ -1976,7 +1991,7 @@ footer .footer_bottom {
   height: 100%;
 }
 .present {  text-align: center;}
-.present h1 {  font-size: 40px;  line-height: 60px;padding-bottom: 50px;}
+.present h1 {  font-size: 40px;  line-height: 60px;padding-bottom: 5px;}
 .section_btn {  }
 .present_img {  margin: 0 auto;  text-align: center;}
 .section_heading h2 {  font-size: 35px; line-height:50px;}
