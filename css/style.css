@@ -45,6 +45,11 @@ h6{
 	font-size: 22px;
 }
 
+@media only screen and (min-width: 700px) {
+  .present_img {
+    top: 3.8vh;
+  }
+}
 
 p{
 	font-size:16px;
